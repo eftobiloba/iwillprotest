@@ -1,0 +1,106 @@
+.p-body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.align-text-center{
+  text-align: center;
+}
+
+.color-white{
+  color: white;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.p-body h1{
+  font-family: 'Impact', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Header.css */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.darkened-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter-link{
+  margin-top: 20px;
+}
+
+.protest-text {
+  color: white;
+  font-family: 'Impact', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  transition: opacity 1s ease-in-out;
+}
+
+.protest-text.visible {
+  opacity: 1;
+}
+
+.protest-text.hidden {
+  opacity: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+  .protest-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .protest-text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .protest-text {
+    font-size: 1.5rem;
+  }
+  
+  .banner-container {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .protest-text {
+    font-size: 1.2rem;
+  }
+  
+  .banner-container {
+    height: 250px;
+  }
+}
