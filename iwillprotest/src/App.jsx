@@ -17,7 +17,7 @@ const getBrowserInfo = () => {
 function App() {
   const [voteCount, setVoteCount] = useState(0);
   const [hasVoted, setHasVoted] = useState(Cookies.get('hasVoted') === 'true');
-  const twitterUrl = `https://twitter.com/intent/tweet?text=Join%20the%20movement%20with%20${voteCount}%20other%20Nigerians!&url=https://something-i.com&hashtags=EndBadGovernanceProtest`;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=Join%20the%20movement%20with%20${voteCount}%20other%20Nigerians!&url=https://iwillprotest.vercel.app&hashtags=EndBadGovernanceProtest`;
 
 
   useEffect(() => {
