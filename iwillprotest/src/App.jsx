@@ -21,7 +21,7 @@ function App() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/protest-count')
+    axios.get('https://iwillbeprotesting-backend.vercel.app/api/protest-count')
       .then(response => {
         setVoteCount(response.data.count);
       })
@@ -39,7 +39,7 @@ function App() {
     const browserInfo = getBrowserInfo();
 
     try {
-      const response = await axios.post('http://localhost:8000/api/protest', browserInfo);
+      const response = await axios.post('https://iwillbeprotesting-backend.vercel.app/api/protest', browserInfo);
 
       if (response.status === 200) {
         Cookies.set('hasVoted', 'true');
